@@ -1,0 +1,43 @@
+@import './reset.scss';
+
+html {
+  font-size: 62.5%; /* 1rem = 10px = 8pt */
+}
+html,
+body {
+  /* Use some smooth fonts */
+  font-family: 'SF Pro Text', 'SF Pro Icons', 'Segoe UI', SegoeUI, 'Helvetica Neue', 'Helvetica',
+    'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: rgb(0, 0, 0);
+  background: -moz-radial-gradient(circle, rgba(1, 53, 44, 1) 0%, rgba(81, 99, 149, 1) 100%);
+  background: -webkit-radial-gradient(circle, rgba(1, 53, 44, 1) 0%, rgba(81, 99, 149, 1) 100%);
+  background: radial-gradient(circle, rgba(1, 53, 44, 1) 0%, rgba(81, 99, 149, 1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#516395",GradientType=1);
+}
+
+.hiddenFromScreen {
+  display: none !important;
+}
+
+.mainAppComponent {
+  width: 100%;
+  position: relative;
+}
+
+.appHolder {
+  width: 100%;
+  max-width: 118rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.viewNotready {
+  text-align: center;
+  text-transform: lowercase;
+  color: pink;
+  font-size: 1.2rem;
+  margin: 2rem;
+}
